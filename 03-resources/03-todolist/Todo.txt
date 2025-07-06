@@ -1,0 +1,42 @@
+|//////////////|
+|     Todo     |
+|//////////////|
+
+
+
+KI gestütztes Projekt:
+---------------------
+x Projekt aufsetzen
+* Startseite entwickeln
+	* Neuste Produkte
+	* Übersicht aller Produkte
+	* Newsletter eintragen können (für neue Aktionen und Produkte informiert bleiben)
+* Produktseite entwickeln
+	* Alle Produkte
+	* Wenn man draufklickt dann zu Detailansicht (Bild, Beschreibung, Preis)
+	* Über Forum online bestellt werden können
+	* Warenkorb
+	* Kategorien für Produkte
+	* Filter für Kategorien
+* Kontaktseite entwickeln
+	* Informationen über Team (Über uns)
+	* Kontaktdaten für Fragen
+	* Über Dropdown Betreffzeilen (für automatisierte Zuordnung)
+* Warenkorb mit zentrallem Bestellformular
+* Konto, Login/Signup/Logout
+* Merkliste (Web Stroage API)
+* Abgeben
+
+
+Full-KI-Projekt:
+-----------
+* Projekt aufsetzen
+
+
+Organisatorisches:
+------------------
+* Selbstbewertung machen
+* Retrospektive machen
+* Dokumentation schreiben
+* Dokumentation Rechtschreibung überprüfen
+* Präsi vorbereiten
