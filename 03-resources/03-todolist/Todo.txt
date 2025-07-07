@@ -25,12 +25,12 @@ x Projekt aufsetzen
 * Warenkorb mit zentrallem Bestellformular
 * Konto, Login/Signup/Logout
 * Merkliste (Web Stroage API)
-* Abgeben
-
-
-Full-KI-Projekt:
------------
-* Projekt aufsetzen
+* Bonus Sachen entwickeln
+	* CSS (Transform, Transitions, Animationen, Variabeln, Web und Icon-Fonts, LESS SASS und SCSS)
+	* Web-Optimierung (Übersicht, Node.js, Package Managers, Optimierung durch Bundling/Minifying, Automatisierung/Task Runner)
+	* HTML-Medien (Urheberrecht/Lizenzierung, Bilder/Bildformate, Videos/Videoformate, Audios/Audioformate, Frames einbinden, Canvas)
+* Nach Bewertungs-Checkliste überprüfen
+* Gerecht Abgeben
 
 
 Organisatorisches:

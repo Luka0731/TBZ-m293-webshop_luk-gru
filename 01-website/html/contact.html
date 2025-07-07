@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Wyland Soap Co.</title>
+    <meta name="description" content="Get in touch with Wyland Soap Co. Contact information and inquiry form.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Wyland Soap Co.</h1>
+                    <span class="tagline">Handcrafted in Swiss Wine Country</span>
+                </div>
+                
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="homepage.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link">
+                            <img src="../assets/icons/shopping-cart.svg" alt="Cart" class="cart-icon">
+                            <span class="cart-count">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We'd love to hear from you. Get in touch with any questions about our handcrafted soaps.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send us a message</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="product-inquiry">Product Inquiry</option>
+                                    <option value="order-status">Order Status</option>
+                                    <option value="custom-order">Custom Order Request</option>
+                                    <option value="wholesale">Wholesale Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                            <div class="form-message" id="contact-message-display"></div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        
+                        <div class="contact-info-item">
+                            <h3>Visit Our Workshop</h3>
+                            <p>Weinlandstrasse 18<br>8450 Andelfingen<br>Switzerland</p>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <h3>Contact Details</h3>
+                            <p>
+                                <strong>Phone:</strong> +41 79 836 50 36<br>
+                                <strong>Email:</strong> info@wylandsoapco.ch
+                            </p>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <h3>Workshop Hours</h3>
+                            <p>
+                                <strong>Monday - Friday:</strong> 9:00 - 17:00<br>
+                                <strong>Saturday:</strong> 10:00 - 16:00<br>
+                                <strong>Sunday:</strong> Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://seniorweb.ch/wp-content/uploads/2019/10/11921-047b-ReichlinBernadette-100x125mm-300dpi-696x641.jpg" alt="Maria Huber" class="member-photo">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Maria Huber</h3>
+                            <p class="team-role">Master Soap Maker</p>
+                            <p>Maria founded Wyland Soap Co. in 2018, bringing 15 years of traditional soap-making experience from her family's workshop in the Swiss countryside.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1qfP3a.img?w=768&h=433&m=6&x=490&y=180&s=285&d=285" alt="Hans Mueller" class="member-photo">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Nori Sylejmani</h3>
+                            <p class="team-role">Ingredient Specialist</p>
+                            <p>Hans sources all our natural ingredients from local Swiss farms and vineyards, ensuring the highest quality and supporting our community.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://noseryoung.ch/wp-content/uploads/2024/09/Abigail.jpg" alt="Anna Zimmermann" class="member-photo">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Abigail Llanque Romero</h3>
+                            <p class="team-role">Customer Relations</p>
+                            <p>Anna handles all customer inquiries and custom orders, ensuring every customer receives personalized service and the perfect soap for their needs. More about Abi: https://www.linkedin.com/in/abigail-llanque-romero/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wyland Soap Co.</h3>
+                    <p class="gray-brown">Handcrafted soaps from the Swiss wine country, made with love and traditional methods passed down through generations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=lavender">Lavender</a></li>
+                        <li><a href="products.html?category=citrus">Citrus Fresh</a></li>
+                        <li><a href="products.html?category=herbs">Alpine Herbs</a></li>
+                        <li><a href="products.html?category=wine">Wine Country</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p class="gray-brown">Weinlandstrasse 18<br>8450 Andelfingen, Switzerland</p>
+                    <p class="gray-brown">Tel: +41 79 836 50 36</p>
+                    <p class="gray-brown">Email: info@wylandsoapco.ch</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="gray-brown">&copy; 2025 Wyland Soap Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

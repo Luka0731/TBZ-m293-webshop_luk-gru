@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Wyland Soap Co.</title>
+    <meta name="description" content="Detailed information about our handcrafted Swiss soaps.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Wyland Soap Co.</h1>
+                    <span class="tagline">Handcrafted in Swiss Wine Country</span>
+                </div>
+                
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="homepage.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link">
+                            <img src="../assets/icons/shopping-cart.svg" alt="Cart" class="cart-icon">
+                            <span class="cart-count">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Product Detail -->
+        <section class="product-detail">
+            <div class="container">
+                <div class="product-detail-content" id="product-detail-content">
+                    <!-- Product skeleton -->
+                    <div class="product-detail-skeleton">
+                        <div class="product-images-skeleton">
+                            <div class="skeleton-image large"></div>
+                        </div>
+                        <div class="product-info-skeleton">
+                            <div class="skeleton-text short"></div>
+                            <div class="skeleton-text long"></div>
+                            <div class="skeleton-text medium"></div>
+                            <div class="skeleton-text long"></div>
+                            <div class="skeleton-text medium"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">Related Products</h2>
+                <div class="products-grid" id="related-products">
+                    <!-- Related products will be loaded via JavaScript -->
+                    <div class="product-skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text short"></div>
+                        <div class="skeleton-text long"></div>
+                        <div class="skeleton-text medium"></div>
+                    </div>
+                    <div class="product-skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text short"></div>
+                        <div class="skeleton-text long"></div>
+                        <div class="skeleton-text medium"></div>
+                    </div>
+                    <div class="product-skeleton">
+                        <div class="skeleton-image"></div>
+                        <div class="skeleton-text short"></div>
+                        <div class="skeleton-text long"></div>
+                        <div class="skeleton-text medium"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wyland Soap Co.</h3>
+                    <p class="gray-brown">Handcrafted soaps from the Swiss wine country, made with love and traditional methods passed down through generations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=lavender">Lavender</a></li>
+                        <li><a href="products.html?category=citrus">Citrus Fresh</a></li>
+                        <li><a href="products.html?category=herbs">Alpine Herbs</a></li>
+                        <li><a href="products.html?category=wine">Wine Country</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p class="gray-brown">Weinlandstrasse 18<br>8450 Andelfingen, Switzerland</p>
+                    <p class="gray-brown">Tel: +41 79 836 50 36</p>
+                    <p class="gray-brown">Email: info@wylandsoapco.ch</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="gray-brown">&copy; 2025 Wyland Soap Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

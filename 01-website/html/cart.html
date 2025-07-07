@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Wyland Soap Co.</title>
+    <meta name="description" content="Review your selected handcrafted Swiss soaps and complete your order.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Wyland Soap Co.</h1>
+                    <span class="tagline">Handcrafted in Swiss Wine Country</span>
+                </div>
+                
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="homepage.html" class="nav-link">Home</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="cart.html" class="nav-link cart-link active">
+                            <img src="../assets/icons/shopping-cart.svg" alt="Cart" class="cart-icon">
+                            <span class="cart-count">0</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Shopping Cart</h1>
+                <p class="page-subtitle">Review your selected items and complete your order.</p>
+            </div>
+        </section>
+
+        <!-- Cart Content -->
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-content">
+                    <!-- Cart Items -->
+                    <div class="cart-items" id="cart-items">
+                        <!-- Cart items will be loaded via JavaScript -->
+                    </div>
+                    
+                    <!-- Empty Cart Message -->
+                    <div class="empty-cart" id="empty-cart">
+                        <h2>Your cart is empty</h2>
+                        <p>Looks like you haven't added any soaps to your cart yet.</p>
+                        <a href="products.html" class="cta-button">Browse Products</a>
+                    </div>
+                    
+                    <!-- Cart Summary -->
+                    <div class="cart-summary" id="cart-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">CHF 0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span id="cart-shipping">CHF 8.90</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="cart-total">CHF 0.00</span>
+                        </div>
+                        <button class="checkout-button" id="checkout-button">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checkout Form -->
+        <section class="checkout-section" id="checkout-section" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">Checkout</h2>
+                <form class="checkout-form" id="checkout-form">
+                    <div class="form-grid">
+                        <div class="form-section">
+                            <h3>Shipping Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="checkout-name">Full Name *</label>
+                                <input type="text" id="checkout-name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="checkout-email">Email *</label>
+                                <input type="email" id="checkout-email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="checkout-phone">Phone</label>
+                                <input type="tel" id="checkout-phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="checkout-address">Address *</label>
+                                <input type="text" id="checkout-address" name="address" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkout-city">City *</label>
+                                    <input type="text" id="checkout-city" name="city" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="checkout-postal">Postal Code *</label>
+                                    <input type="text" id="checkout-postal" name="postal" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="checkout-country">Country *</label>
+                                <select id="checkout-country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="FR">France</option>
+                                    <option value="IT">Italy</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h3>Additional Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="checkout-notes">Order Notes</label>
+                                <textarea id="checkout-notes" name="notes" rows="4" placeholder="Special instructions for your order..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="checkout-newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and special offers
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="back-button" id="back-to-cart">Back to Cart</button>
+                        <button type="submit" class="submit-button">Place Order</button>
+                    </div>
+                    
+                    <div class="form-message" id="checkout-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+<div class="footer-section">
+                    <h3>Wyland Soap Co.</h3>
+                    <p class="gray-brown">Handcrafted soaps from the Swiss wine country, made with love and traditional methods passed down through generations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=lavender">Lavender</a></li>
+                        <li><a href="products.html?category=citrus">Citrus Fresh</a></li>
+                        <li><a href="products.html?category=herbs">Alpine Herbs</a></li>
+                        <li><a href="products.html?category=wine">Wine Country</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p class="gray-brown">Weinlandstrasse 18<br>8450 Andelfingen, Switzerland</p>
+                    <p class="gray-brown">Tel: +41 79 836 50 36</p>
+                    <p class="gray-brown">Email: info@wylandsoapco.ch</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="gray-brown">&copy; 2025 Wyland Soap Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

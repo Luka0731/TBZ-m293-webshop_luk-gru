@@ -1,0 +1,204 @@
+/* Skeleton Loading Styles */
+/* Provides loading placeholder animations for content */
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--skeleton-base);
+    }
+    50% {
+        background-color: var(--skeleton-highlight);
+    }
+    100% {
+        background-color: var(--skeleton-base);
+    }
+}
+
+/* Skeleton base styles */
+.skeleton-image,
+.skeleton-text {
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+    background-color: var(--skeleton-base);
+}
+
+/* Skeleton image placeholders */
+.skeleton-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.skeleton-image.large {
+    height: 400px;
+}
+
+.skeleton-image.medium {
+    height: 300px;
+}
+
+.skeleton-image.small {
+    height: 150px;
+}
+
+/* Skeleton text placeholders */
+.skeleton-text {
+    height: 16px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.skeleton-text.short {
+    width: 60%;
+}
+
+.skeleton-text.medium {
+    width: 80%;
+}
+
+.skeleton-text.long {
+    width: 100%;
+}
+
+/* Product skeleton layouts */
+.product-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.product-skeleton .skeleton-image {
+    height: 200px;
+    margin-bottom: 8px;
+}
+
+.product-skeleton .skeleton-text {
+    height: 14px;
+    margin-bottom: 8px;
+}
+
+/* Product detail skeleton */
+.product-detail-skeleton {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.product-images-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-info-skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-info-skeleton .skeleton-text {
+    height: 16px;
+}
+
+.product-info-skeleton .skeleton-text:first-child {
+    height: 24px;
+    width: 70%;
+}
+
+.product-info-skeleton .skeleton-text:nth-child(2) {
+    height: 18px;
+    width: 40%;
+}
+
+/* Categories skeleton */
+.categories-skeleton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.category-skeleton {
+    text-align: center;
+    padding: 24px;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+}
+
+.category-skeleton .skeleton-image {
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+.category-skeleton .skeleton-text {
+    margin: 0 auto 12px;
+}
+
+/* Team skeleton */
+.team-skeleton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.team-member-skeleton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.team-member-skeleton .skeleton-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team-member-skeleton .skeleton-text {
+    margin: 0 auto 8px;
+}
+
+/* Responsive skeleton adjustments */
+@media (min-width: 900px) {
+    .product-detail-skeleton {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .product-images-skeleton {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .product-images-skeleton .skeleton-image {
+        flex: 1;
+        min-width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skeleton-image {
+        height: 220px;
+    }
+    
+    .skeleton-image.large {
+        height: 450px;
+    }
+    
+    .product-skeleton {
+        padding: 20px;
+    }
+}
+
+/* Hide skeleton when content is loaded */
+.content-loaded .skeleton-image,
+.content-loaded .skeleton-text,
+.content-loaded .product-skeleton,
+.content-loaded .product-detail-skeleton,
+.content-loaded .categories-skeleton,
+.content-loaded .team-skeleton {
+    display: none;
+}
