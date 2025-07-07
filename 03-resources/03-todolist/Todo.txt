@@ -7,28 +7,28 @@
 KI gestütztes Projekt:
 ---------------------
 x Projekt aufsetzen
-* Startseite entwickeln
-	* Neuste Produkte
-	* Übersicht aller Produkte
+x Startseite entwickeln
+	x Neuste Produkte
+	x Übersicht aller Produkte
 	* Newsletter eintragen können (für neue Aktionen und Produkte informiert bleiben)
-* Produktseite entwickeln
-	* Alle Produkte
-	* Wenn man draufklickt dann zu Detailansicht (Bild, Beschreibung, Preis)
-	* Über Forum online bestellt werden können
-	* Warenkorb
-	* Kategorien für Produkte
-	* Filter für Kategorien
-* Kontaktseite entwickeln
-	* Informationen über Team (Über uns)
-	* Kontaktdaten für Fragen
-	* Über Dropdown Betreffzeilen (für automatisierte Zuordnung)
-* Warenkorb mit zentrallem Bestellformular
+x Produktseite entwickeln
+	x Alle Produkte
+	x Wenn man draufklickt dann zu Detailansicht (Bild, Beschreibung, Preis)
+	x Über Forum online bestellt werden können
+	x Warenkorb
+	x Kategorien für Produkte
+	x Filter für Kategorien
+x Kontaktseite entwickeln
+	x Informationen über Team (Über uns)
+	x Kontaktdaten für Fragen
+	x Über Dropdown Betreffzeilen (für automatisierte Zuordnung)
+x Warenkorb mit zentrallem Bestellformular
 * Konto, Login/Signup/Logout
 * Merkliste (Web Stroage API)
-* Bonus Sachen entwickeln
-	* CSS (Transform, Transitions, Animationen, Variabeln, Web und Icon-Fonts, LESS SASS und SCSS)
-	* Web-Optimierung (Übersicht, Node.js, Package Managers, Optimierung durch Bundling/Minifying, Automatisierung/Task Runner)
-	* HTML-Medien (Urheberrecht/Lizenzierung, Bilder/Bildformate, Videos/Videoformate, Audios/Audioformate, Frames einbinden, Canvas)
+x Bonus Sachen entwickeln
+	x CSS (Transform, Transitions, Animationen, Variabeln, Web und Icon-Fonts, LESS SASS und SCSS)
+	x Web-Optimierung (Übersicht, Node.js, Package Managers, Optimierung durch Bundling/Minifying, Automatisierung/Task Runner)
+	x HTML-Medien (Urheberrecht/Lizenzierung, Bilder/Bildformate, Videos/Videoformate, Audios/Audioformate, Frames einbinden, Canvas)
 * Nach Bewertungs-Checkliste überprüfen
 * Gerecht Abgeben
 
