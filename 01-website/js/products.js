@@ -170,9 +170,9 @@ class ProductManager {
         if (window.location.pathname.includes('products.html')) {
             this.renderProductGrid();
         } else if (
-            window.location.pathname.includes('homepage.html') ||
+            window.location.pathname.includes('index.html') ||
             window.location.pathname === '/' ||
-            window.location.pathname.includes('homepage.html') // 👈 add this line
+            window.location.pathname.includes('index.html')
         ) {
             this.renderFeaturedProducts();
         }

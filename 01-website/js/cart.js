@@ -475,7 +475,7 @@ class CartManager {
                 
                 <div class="confirmation-actions">
                     <a href="products.html" class="cta-button">Continue Shopping</a>
-                    <a href="homepage.html" class="back-button">Back to Home</a>
+                    <a href="index.html" class="back-button">Back to Home</a>
                 </div>
             </div>
         `;
