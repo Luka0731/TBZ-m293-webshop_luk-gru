@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail - Wyland Soap Co.</title>
-    <meta name="description" content="Detailed information about our handcrafted Swiss soaps.">
+    <title>Wyland Soap Co.</title>
+    <meta name="description" content="Premium handcrafted soaps from the Swiss wine country. Natural ingredients, traditional methods, local craftsmanship.">
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/skeleton.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/cart.css">
     
-    <!-- Fonts -->
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
                 
                 <nav class="navigation">
                     <ul class="nav-list">
-                        <li><a href="homepage.html" class="nav-link">Home</a></li>
+                        <li><a href="homepage.html" class="nav-link active">Home</a></li>
                         <li><a href="products.html" class="nav-link">Products</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                         <li><a href="cart.html" class="nav-link cart-link">
@@ -50,33 +50,68 @@
 
     <!-- Main Content -->
     <main class="main">
-        <!-- Product Detail -->
-        <section class="product-detail">
+        <!-- Hero Section -->
+        <section class="hero">
             <div class="container">
-                <div class="product-detail-content" id="product-detail-content">
-                    <!-- Product skeleton -->
-                    <div class="product-detail-skeleton">
-                        <div class="product-images-skeleton">
-                            <div class="skeleton-image large"></div>
+                <div class="hero-content">
+                    <h2 class="hero-title">Natural Soaps<br>From the Heart of Switzerland</h2>
+                    <p class="hero-subtitle">Handcrafted with traditional methods using the finest natural ingredients from our local wine country region.</p>
+                    <a href="products.html" class="cta-button">Shop Our Collection</a>
+                </div>
+                <img class="hero-image" src="../assets/images/soaps.jpg" alt="Swiss countryside with soap making tools" class="hero-bg">
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Our Soap Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="lavender">
+                        <div class="category-icon">
+                            <img src="../assets/icons/lavender-collection.svg" alt="Lavender soaps" class="category-image">
                         </div>
-                        <div class="product-info-skeleton">
-                            <div class="skeleton-text short"></div>
-                            <div class="skeleton-text long"></div>
-                            <div class="skeleton-text medium"></div>
-                            <div class="skeleton-text long"></div>
-                            <div class="skeleton-text medium"></div>
+                        <h3>Lavender Collection</h3>
+                        <p>Relaxing lavender soaps with calming properties</p>
+                        <a href="products.html?category=lavender" class="category-link">View Collection</a>
+                    </div>
+                    
+                    <div class="category-card" data-category="citrus">
+                        <div class="category-icon">
+                            <img src="../assets/icons/citrus-fresh.svg" alt="Citrus soaps" class="category-image">
                         </div>
+                        <h3>Citrus Fresh</h3>
+                        <p>Energizing citrus blends for morning freshness</p>
+                        <a href="products.html?category=citrus" class="category-link">View Collection</a>
+                    </div>
+                    
+                    <div class="category-card" data-category="herbs">
+                        <div class="category-icon">
+                            <img src="../assets/icons/alpine-herb.svg" alt="Herbal soaps" class="category-image">
+                        </div>
+                        <h3>Alpine Herbs</h3>
+                        <p>Traditional herbal soaps with mountain botanicals</p>
+                        <a href="products.html?category=herbs" class="category-link">View Collection</a>
+                    </div>
+                    
+                    <div class="category-card" data-category="wine">
+                        <div class="category-icon">
+                            <img src="../assets/icons/wine-country.svg" alt="Wine soaps" class="category-image">
+                        </div>
+                        <h3>Wine Country</h3>
+                        <p>Luxurious soaps infused with grape extracts</p>
+                        <a href="products.html?category=wine" class="category-link">View Collection</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Related Products -->
-        <section class="related-products">
+        <!-- Featured Products -->
+        <section class="featured-products">
             <div class="container">
-                <h2 class="section-title">Related Products</h2>
-                <div class="products-grid" id="related-products">
-                    <!-- Related products will be loaded via JavaScript -->
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Products will be loaded via JavaScript -->
                     <div class="product-skeleton">
                         <div class="skeleton-image"></div>
                         <div class="skeleton-text short"></div>
@@ -95,6 +130,27 @@
                         <div class="skeleton-text long"></div>
                         <div class="skeleton-text medium"></div>
                     </div>
+                </div>
+                <div class="section-footer">
+                    <a href="products.html" class="view-all-link">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Stay Updated</h2>
+                    <p class="newsletter-subtitle">Subscribe to our newsletter for new products, special offers, and soap-making tips.</p>
+                    
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="submit-button">Subscribe</button>
+                        </div>
+                        <div class="form-message" id="newsletter-message"></div>
+                    </form>
                 </div>
             </div>
         </section>
